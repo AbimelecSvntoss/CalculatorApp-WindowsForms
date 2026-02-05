@@ -51,8 +51,6 @@ namespace CalculatorAppTestFV2
             return true;
 
         }
-
-
         private void btnSuma_Click(object sender, EventArgs e)
         {
             if (ObtenerNumeros(out double n1, out double n2))
@@ -124,6 +122,7 @@ namespace CalculatorAppTestFV2
             }
         }
 
+        /*
         private void btnResultado_Click(object sender, EventArgs e)
         {
             //lblResultado.Text = "Probando...";
@@ -194,10 +193,11 @@ namespace CalculatorAppTestFV2
 
             lblResultado.Text = "Resultado: " + resultado;
         }
+        */
 
         private void btnDividir_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
