@@ -1,4 +1,4 @@
-# 🧮 ACalculator App - Windows Forms | TecNM Campus Monclova
+# 🧮 Calculator App - Windows Forms | TecNM Campus Monclova
 
 Un entorno de desarrollo se basa en distintas fases tales como análisis, diseño, planificación, desarrollo y mantenimiento,
 por lo que al aplicarlas en la vida cotidiana o proyectos personales/universitarios, debería haber una organización para llevarse a cabo.
