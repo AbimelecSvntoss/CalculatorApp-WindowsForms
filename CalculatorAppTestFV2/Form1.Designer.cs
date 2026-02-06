@@ -1,4 +1,5 @@
-﻿namespace CalculatorAppTestFV2
+﻿
+namespace CalculatorAppTestFV2
 {
     partial class Form1
     {
@@ -28,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             txtNumero2 = new Label();
             txtNumero1 = new TextBox();
@@ -45,7 +47,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ControlDarkDark;
+            label1.BackColor = SystemColors.WindowFrame;
             label1.Font = new Font("Sitka Banner", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(117, 83);
@@ -75,9 +77,10 @@
             // 
             // btnSuma
             // 
-            btnSuma.Location = new Point(101, 153);
+            btnSuma.Font = new Font("Sitka Heading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSuma.Location = new Point(101, 147);
             btnSuma.Name = "btnSuma";
-            btnSuma.Size = new Size(75, 23);
+            btnSuma.Size = new Size(75, 34);
             btnSuma.TabIndex = 3;
             btnSuma.Text = "Sumar";
             btnSuma.UseVisualStyleBackColor = true;
@@ -85,9 +88,10 @@
             // 
             // btnResta
             // 
-            btnResta.Location = new Point(194, 153);
+            btnResta.Font = new Font("Sitka Heading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResta.Location = new Point(194, 147);
             btnResta.Name = "btnResta";
-            btnResta.Size = new Size(75, 23);
+            btnResta.Size = new Size(75, 34);
             btnResta.TabIndex = 4;
             btnResta.Text = "Restar";
             btnResta.UseVisualStyleBackColor = true;
@@ -95,9 +99,10 @@
             // 
             // btnDivision
             // 
-            btnDivision.Location = new Point(285, 153);
+            btnDivision.Font = new Font("Sitka Heading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDivision.Location = new Point(285, 147);
             btnDivision.Name = "btnDivision";
-            btnDivision.Size = new Size(75, 23);
+            btnDivision.Size = new Size(75, 34);
             btnDivision.TabIndex = 5;
             btnDivision.Text = "Dividir";
             btnDivision.UseVisualStyleBackColor = true;
@@ -105,9 +110,10 @@
             // 
             // btnMultiplicar
             // 
-            btnMultiplicar.Location = new Point(101, 193);
+            btnMultiplicar.Font = new Font("Sitka Heading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMultiplicar.Location = new Point(192, 188);
             btnMultiplicar.Name = "btnMultiplicar";
-            btnMultiplicar.Size = new Size(75, 23);
+            btnMultiplicar.Size = new Size(87, 33);
             btnMultiplicar.TabIndex = 6;
             btnMultiplicar.Text = "Multiplicar";
             btnMultiplicar.UseVisualStyleBackColor = true;
@@ -115,9 +121,10 @@
             // 
             // btnPotencia
             // 
-            btnPotencia.Location = new Point(194, 193);
+            btnPotencia.Font = new Font("Sitka Heading", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPotencia.Location = new Point(101, 187);
             btnPotencia.Name = "btnPotencia";
-            btnPotencia.Size = new Size(75, 23);
+            btnPotencia.Size = new Size(75, 33);
             btnPotencia.TabIndex = 7;
             btnPotencia.Text = "Potencia";
             btnPotencia.UseVisualStyleBackColor = true;
@@ -125,9 +132,10 @@
             // 
             // btnRaiz
             // 
-            btnRaiz.Location = new Point(285, 193);
+            btnRaiz.Font = new Font("Sitka Heading", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRaiz.Location = new Point(285, 187);
             btnRaiz.Name = "btnRaiz";
-            btnRaiz.Size = new Size(75, 23);
+            btnRaiz.Size = new Size(75, 33);
             btnRaiz.TabIndex = 8;
             btnRaiz.Text = "Raíz Cuadrada";
             btnRaiz.UseVisualStyleBackColor = true;
@@ -136,19 +144,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Sitka Banner", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Sitka Banner", 14.2499981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(158, 40);
+            label2.Location = new Point(173, 41);
             label2.Name = "label2";
-            label2.Size = new Size(158, 28);
+            label2.Size = new Size(126, 28);
             label2.TabIndex = 11;
-            label2.Text = "Calculadora Básica";
+            label2.Text = "Calculator App";
             // 
             // lblResultado
             // 
-            lblResultado.Location = new Point(158, 268);
+            lblResultado.Font = new Font("Sitka Subheading", 11.249999F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblResultado.Location = new Point(138, 253);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(145, 23);
+            lblResultado.Size = new Size(189, 30);
             lblResultado.TabIndex = 13;
             lblResultado.Text = "Resultado";
             lblResultado.UseVisualStyleBackColor = true;
@@ -165,7 +174,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(473, 329);
             Controls.Add(textBox1);
             Controls.Add(lblResultado);
@@ -179,10 +188,16 @@
             Controls.Add(txtNumero1);
             Controls.Add(txtNumero2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculadora Básica";
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void btnResultado_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

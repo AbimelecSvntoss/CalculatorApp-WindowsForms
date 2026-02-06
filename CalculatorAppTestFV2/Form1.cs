@@ -194,7 +194,6 @@ namespace CalculatorAppTestFV2
             lblResultado.Text = "Resultado: " + resultado;
         }
         */
-
         private void btnDividir_Click(object sender, EventArgs e)
         {
             
