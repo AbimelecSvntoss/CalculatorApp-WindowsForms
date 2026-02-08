@@ -73,5 +73,22 @@ namespace CalculatorAppTestFV2
                 lblResultado.Text = "Resultado: " + Math.Pow(n1, n2);
             }
         }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(txtNumero1.Text, out double n1))
+            {
+                MessageBox.Show("Número no válido");
+                return;
+            }
+
+            if (n1 < 0)
+            {
+                MessageBox.Show("No existe raíz de número negativo");
+                return;
+            }
+
+            lblResultado.Text = "Resultado: " + Math.Sqrt(n1);
+        }
     }
 }

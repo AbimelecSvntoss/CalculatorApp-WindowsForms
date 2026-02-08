@@ -46,7 +46,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.MenuText;
+            label1.BackColor = SystemColors.WindowText;
             label1.Font = new Font("Sitka Banner", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(117, 83);
@@ -133,6 +133,7 @@
             btnPotencia.TabIndex = 7;
             btnPotencia.Text = "Potencia";
             btnPotencia.UseVisualStyleBackColor = true;
+            btnPotencia.Click += btnPotencia_Click;
             // 
             // btnRaiz
             // 
@@ -158,7 +159,8 @@
             // 
             // lblResultado
             // 
-            lblResultado.Font = new Font("Sitka Subheading", 11.249999F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblResultado.BackColor = SystemColors.WindowText;
+            lblResultado.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblResultado.ForeColor = SystemColors.Control;
             lblResultado.Location = new Point(101, 240);
             lblResultado.Name = "lblResultado";
@@ -171,7 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.MenuText;
+            BackColor = SystemColors.WindowText;
             ClientSize = new Size(473, 329);
             Controls.Add(lblResultado);
             Controls.Add(label2);
@@ -187,7 +189,7 @@
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Calculadora Básica";
+            Text = "Calculator App";
             ResumeLayout(false);
             PerformLayout();
         }
