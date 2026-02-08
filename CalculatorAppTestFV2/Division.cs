@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CalculatorAppTestFV2
 {
@@ -14,7 +12,9 @@ namespace CalculatorAppTestFV2
         public override string Validar(double n1, double n2)
         {
             if (n2 == 0)
-                return "No se puede dividir entre cero.";
+            {
+                return "No se puede dividir entre cero";
+            }
 
             return "";
         }
